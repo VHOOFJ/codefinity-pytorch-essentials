@@ -1,0 +1,12 @@
+import torch
+
+# Create a 2x3 tensor filled with zeros
+tensor_1 = torch.zeros(2,3)
+# Create a 1D tensor with values from 1 to 10 inclusive
+tensor_2 = torch.arange(1,11)
+# Create a 1D tensor with 10 evenly spaced values between 2 and 4
+tensor_3 = torch.linspace(2,4,steps=10)
+# Print the tensors
+print(tensor_1)
+print(tensor_2)
+print(tensor_3)

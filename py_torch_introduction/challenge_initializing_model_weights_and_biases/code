@@ -1,0 +1,14 @@
+import torch
+
+# Set the manual seed
+torch.manual_seed(42)
+# Create a 3x4 tensor with random values between 0 and 1
+weights_layer1 = torch.rand(3, 4)
+# Create a 1x4 tensor filled with zeros
+biases_layer1 = torch.zeros(1, 4)
+# Create a 4x2 tensor with random integers between -5 and 5
+weights_layer2 = torch.randint(-5, 5, (4, 2))
+# Print the tensors
+print("Weights for layer 1:\n", weights_layer1)
+print("Biases for layer 1:\n", biases_layer1)
+print("Weights for layer 2:\n", weights_layer2)

@@ -1,0 +1,18 @@
+import torch
+
+tensor = torch.tensor([[3, 7, 1], [2, 5, 9], [8, 6, 4]]).float()
+# Compute the sum of each row and retain the dimensions
+row_sum = tensor.sum(dim=1, keepdim=True)
+# Calculate the mean of each column
+column_mean = tensor.mean(dim=0)
+# Find the maximum value of each row
+row_max = tensor.max(dim=1)[0]
+# Normalize the tensor by dividing each element by the overall sum
+overall_sum = tensor.sum(dim=1)
+normalized_tensor = tensor / tensor.sum()
+# Print results
+print("Original tensor:\n", tensor)
+print("Row sum:\n", row_sum)
+print("Column mean:\n", column_mean)
+print("Row max:\n", row_max)
+print("Normalized tensor:\n", normalized_tensor)
